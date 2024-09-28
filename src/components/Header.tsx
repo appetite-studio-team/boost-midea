@@ -3,6 +3,8 @@
 import { useEffect, useState } from 'react';
 import { HeaderMenuLinks } from './HeaderMenuLinks';
 import { Socials } from './Socials';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,7 +36,7 @@ export const Header = () => {
 
   return (
     <div
-      className={`navbar fixed left-1/2 top-4 z-50 w-[calc(100%-32px)] -translate-x-1/2 transform transition-colors duration-300 ${
+      className={`navbar fixed left-1/2 top-4 z-50 w-[calc(100%-32px)] max-w-6xl -translate-x-1/2 transform transition-colors duration-300 ${
         isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
       } rounded-lg p-2`}
     >
@@ -73,7 +75,15 @@ export const Header = () => {
             </div>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">Boost Midea</a>
+        <Link href="/" className="btn btn-ghost">
+          <Image
+            src="/assets/boost-midea-logo.png"
+            height={30}
+            width={100}
+            objectFit="contain"
+            alt="Boost Midea Logo"
+          />
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
