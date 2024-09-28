@@ -11,7 +11,7 @@ export default function HeroSection() {
           <div className="relative -mb-24 w-[800px] lg:-mb-32">
             <Image
               style={{ objectFit: 'contain' }}
-              height={300}
+              height={800}
               width={800}
               src="/assets/hero-image.svg"
               alt=""
