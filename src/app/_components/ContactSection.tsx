@@ -1,5 +1,6 @@
 import { ChatBubble } from '@/components/ChatBubble';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const ContactSection: React.FC = () => {
   return (
@@ -14,7 +15,9 @@ const ContactSection: React.FC = () => {
         <div className="indicator">
           <span className="badge indicator-item badge-success scale-50"></span>
           <span className="badge indicator-item badge-success opacity-50"></span>
-          <button className="btn btn-primary btn-wide z-10">Let&apos;s Talk</button>
+          <Link href="/contact" className="btn btn-primary btn-wide z-10">
+            Let&apos;s Talk
+          </Link>
         </div>
       </div>
       <div className="flex justify-center">

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 const reels = [
   {
@@ -207,7 +208,9 @@ const PortfolioSection: React.FC = () => {
                 <div className="stat-title text-secondary">Tasks done</div>
                 <div className="stat-desc text-secondary">31 tasks remaining</div>
               </div>
-              <button className="btn btn-primary my-4">See Portfolio</button>
+              <Link href="/portfolio" className="btn btn-primary my-4">
+                See Portfolio
+              </Link>
             </div>
           </div>
         </div>
