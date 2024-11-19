@@ -4,7 +4,7 @@ import Link from 'next/link';
 const reels = [
   {
     id: 1,
-    avatar: 'https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp',
+    avatar: '/assets/portfolio/beyond-view-avatar.png',
     username: 'beyondviewbusiness',
     text: '@beyondviewbusiness ✨ Dreaming of launching your business in the dynamic UAE? Let’s make it a reality! 🌍 ',
     video: '/assets/launching-your-business.mp4',
@@ -13,7 +13,7 @@ const reels = [
   },
   {
     id: 2,
-    avatar: 'https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp',
+    avatar: '/assets/portfolio/musbahul-huda-avatar.jpg',
     username: 'musbahul__huda',
     text: '@musbahul__huda follow for more info',
     video: '/assets/musbahul-huda.mp4',
@@ -22,7 +22,7 @@ const reels = [
   },
   {
     id: 3,
-    avatar: 'https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp',
+    avatar: '/assets/portfolio/digi-busi-card-avatar.png',
     username: 'digi_busi_card',
     text: '@digi_busi_card 💼🇦🇪 Digital Business Card 🇦🇪💼📱',
     video: '/assets/business-card.mp4',
@@ -31,7 +31,7 @@ const reels = [
   },
   {
     id: 4,
-    avatar: 'https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp',
+    avatar: '/assets/ajmal.jpg',
     username: 'ajmal_ahsan_k_dubai',
     text: '@ajmal_ahsan_k_dubai Why I Love Content Creation ♥️',
     video: '/assets/why-i-love-content.mp4',
@@ -66,7 +66,7 @@ const Reel: React.FC<ReelProps> = ({ reel }) => {
           <Image
             src={reel.avatar}
             alt={reel.username + ' avatar'}
-            className="h-6 w-6 rounded-full"
+            className="h-6 w-6 rounded-full bg-white object-cover"
             width={24}
             height={24}
           />

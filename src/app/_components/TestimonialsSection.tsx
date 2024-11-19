@@ -12,41 +12,54 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: 'Karla Lynn',
-    username: '@karlalynn98',
-    avatar: 'https://via.placeholder.com/50',
-    text: "I've been using @pagedone for a year now and it's made managing my finances so much easier. 🙌",
-    image: 'https://via.placeholder.com/300',
+    name: 'Maria',
+    username: 'Tiger Properties',
+    avatar: '/assets/testimonials/maria.jpeg',
+    text: 'I want to thank you about the video they all liked it and as well i won the first place 💪🏻 You are amazing and thank you for the efforts you put with me🤍',
+    image: '/assets/testimonials/maria.jpeg',
   },
   {
     id: 2,
-    name: 'Annette Black',
-    username: '@annetteblack35',
-    avatar: 'https://via.placeholder.com/50',
-    text: "@pagedone has helped me save money, reduce my debt, and invest in my future - it's the complete financial package.",
+    name: 'Hayot',
+    username: 'Wealtcraft Dubai',
+    avatar: '/assets/testimonials/hayot.jpeg',
+    text: 'Ajmal Bhai, working with you has been an absolute pleasure! 🎨🔥 Your creativity and dedication are truly on another level. You always manage to take my vision and turn it into something amazing, whether it’s through your captivating videos 📹 or those impactful messages 💬. The quality you bring is outstanding, and it’s clear your work connects with the audience every time 🌟. Honestly, you’re not just great at what you do but also a fantastic person to collaborate with 🤝. Keep up the awesome work, bro – anyone looking to elevate their content is lucky to have you on board! 🚀',
   },
   {
     id: 3,
-    name: 'Ronald Richards',
-    username: '@ronaldrichards47',
-    avatar: 'https://via.placeholder.com/50',
-    text: '@pagedone I love this. It is very easy to use.',
-    image: 'https://via.placeholder.com/300',
+    name: 'Sajith kumar',
+    username: 'Beyond View business services',
+    avatar: '/assets/testimonials/sajith.jpeg',
+    text: "Hi Ajmal, I hope you're doing well. The last video you made was absolutely fantastic. I truly appreciate your support!",
   },
   {
     id: 4,
-    name: 'Arlene McCoy',
-    username: '@arlenemccoy65',
-    avatar: 'https://via.placeholder.com/50',
-    text: '@pagedone I love this product! It has completely changed how I handle my finances.',
-    image: 'https://via.placeholder.com/300',
+    name: 'Land department operations manager',
+    username: 'Pendulum logistics',
+    avatar: '/assets/testimonials/pendulum.jpeg',
+    text: "Ajmal is a true master of his craft. His content creation and videography skills are second to none. He has a unique ability to turn ideas into captivating visuals. I've been extremely impressed with his attention to detail and his dedication to producing high-quality work. I'm grateful for the opportunity to work with him",
   },
   {
     id: 5,
-    name: 'Jenny Wilson',
-    username: '@jennywilson968',
+    name: 'Abbas',
+    username: 'Wealthcraft Dubai',
+    avatar: '/assets/testimonials/abbas.jpeg',
+    text: 'I am highly satisfied with the services provided by Boost Media. They delivered quality results in a timely manner and were extremely professional throughout the process. Their expertise and attention to detail have exceeded my expectations.',
+  },
+  {
+    id: 6,
+    name: 'Sherene James',
+    username: 'Beyond View business services',
     avatar: 'https://via.placeholder.com/50',
-    text: '@pagedone has transformed the way I manage my investments, making it easier to keep track and maximize my returns. 😊',
+    text: 'Hello Ajmal!! I just wanted to take a moment to thank you sincerely for your patience and support during my video shoot. Your interactive nature and the way you connected with everyone made us feel more enjoyable.I truly believe that with your positive attitude and hard work, you’re destined for great success. Wishing you all the best in your journey ahead, and I’m confident that you’ll reach amazing heights!',
+  },
+  {
+    id: 7,
+    name: 'Priya',
+    username: 'Beyond View business services',
+    avatar: '/assets/testimonials/priya.jpeg',
+    text: "Your way of editing video has given me a positive vibe and because of that everybody has incredibly loved my videos. So I just need to say 'thank you' and all the best for the upcoming events.",
+    image: '/assets/testimonials/priya.jpeg',
   },
 ];
 
@@ -92,8 +105,8 @@ const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => {
           <div className="h-10 w-10 rounded-full bg-neutral-200">
             <Image
               src={testimonial.avatar}
-              alt={testimonial.username + ' avatar'}
-              className="rounded-full"
+              alt={testimonial.name + ' avatar'}
+              className="h-10 w-10 rounded-full object-cover"
               width={40}
               height={40}
             />
@@ -137,7 +150,6 @@ const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => {
           <CommentIcon />
         </div>
         <div className="text-sm">
-          <span className="mr-2 inline-block font-medium">{testimonial.username}</span>
           <span>{testimonial.text}</span>
         </div>
       </div>
