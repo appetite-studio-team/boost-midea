@@ -17,10 +17,14 @@ export const ChatBubble = ({
         <div className="w-10 rounded-full">
           <Image
             alt="Chat avatar"
-            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+            src={
+              align === 'start'
+                ? '/assets/ajmal.jpg'
+                : 'https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp'
+            }
             width={40}
             height={40}
-            className="rounded-full"
+            className="h-10 w-10 rounded-full"
           />
         </div>
       </div>
