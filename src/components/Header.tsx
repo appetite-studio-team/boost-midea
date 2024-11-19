@@ -70,7 +70,7 @@ export const Header = () => {
             }`}
           >
             <HeaderMenuLinks onClick={closeDropdown} />
-            <div className="m-4 mt-10 block flex opacity-50">
+            <div className="m-4 mt-10 flex opacity-50">
               <Socials />
             </div>
           </ul>
@@ -91,7 +91,7 @@ export const Header = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn btn-neutral">
+        <a href="tel:+971 54 787 8677" className="btn btn-neutral">
           <svg
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
