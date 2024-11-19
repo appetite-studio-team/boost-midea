@@ -1,23 +1,22 @@
 import { ChatBubble } from '@/components/ChatBubble';
 import Image from 'next/image';
-import Link from 'next/link';
 
 const ContactSection: React.FC = () => {
   return (
     <section>
       <div className="m-auto max-w-[800px] px-4 pb-8 pt-8">
-        <ChatBubble>So, ready to work with us?</ChatBubble>
+        <ChatBubble>you sure you can handle the fame?</ChatBubble>
         <ChatBubble name="Awesome Client" align="end">
-          Yeah, impressive stuff! How do we get started?
+          bring it on 😎
         </ChatBubble>
       </div>
       <div className="flex justify-center lg:mt-12">
         <div className="indicator">
           <span className="badge indicator-item badge-success scale-50"></span>
           <span className="badge indicator-item badge-success opacity-50"></span>
-          <Link href="/contact" className="btn btn-primary btn-wide z-10">
+          <a href="tel:+971 54 787 8677" className="btn btn-primary btn-wide z-10">
             Let&apos;s Talk
-          </Link>
+          </a>
         </div>
       </div>
       <div className="flex justify-center">
