@@ -1,13 +1,5 @@
 {
   "title": "portfolio",
   "type": "object",
-  "properties": {
-    "category": {
-      "required": false,
-      "description": "Add a Category",
-      "fieldType": "String",
-      "dataType": "string",
-      "title": "Category"
-    }
-  }
+  "properties": {}
 }
