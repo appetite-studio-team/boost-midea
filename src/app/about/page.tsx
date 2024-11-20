@@ -46,9 +46,9 @@ export default function About() {
               </ol>
             </div>
           </div>
-          <div className='text-center mt-8'>
-            <h3 className='text-3xl font-bold'>
-              That's we do <br/>
+          <div className="mt-8 text-center">
+            <h3 className="text-3xl font-bold">
+              That's we do <br />
               Simple and Precise
             </h3>
           </div>
@@ -97,7 +97,7 @@ export default function About() {
           </div>
           <div className="relative z-10 m-auto max-w-lg space-y-4 py-8 drop-shadow-lg">
             <h3>Breathing life into your ideas</h3>
-            <p className='font-light'>
+            <p className="font-light">
               Boostup Media is a leading social media content creation agency based in Dubai,
               specializing in creating impactful and results-driven social media strategies. We help
               businesses grow their online presence, engage with their audience, and drive
