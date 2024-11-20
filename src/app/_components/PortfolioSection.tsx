@@ -166,8 +166,8 @@ const PortfolioSection: React.FC = () => {
                   </svg>
                 </div>
                 <div className="stat-title text-secondary">Total Likes</div>
-                <div className="stat-value text-primary">25.6K</div>
-                <div className="stat-desc text-secondary">21% more than last month</div>
+                <div className="stat-value text-primary">1M+</div>
+                <div className="stat-desc text-secondary">for our posts</div>
               </div>
 
               <div className="stat">
@@ -186,27 +186,22 @@ const PortfolioSection: React.FC = () => {
                     ></path>
                   </svg>
                 </div>
-                <div className="stat-title text-secondary">Page Views</div>
-                <div className="stat-value text-secondary">2.6M</div>
-                <div className="stat-desc text-secondary">21% more than last month</div>
+                <div className="stat-title text-secondary">Views</div>
+                <div className="stat-value text-secondary">2M+</div>
+                <div className="stat-desc text-secondary">for our videos</div>
               </div>
 
               <div className="stat">
                 <div className="stat-figure text-secondary">
                   <div className="avatar online">
                     <div className="w-16 rounded-full">
-                      <Image
-                        src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
-                        alt="Stat avatar"
-                        width={64}
-                        height={64}
-                      />
+                      <Image src="/assets/ajmal.jpg" alt="Stat avatar" width={64} height={64} />
                     </div>
                   </div>
                 </div>
-                <div className="stat-value">86%</div>
-                <div className="stat-title text-secondary">Tasks done</div>
-                <div className="stat-desc text-secondary">31 tasks remaining</div>
+                <div className="stat-value">125k</div>
+                <div className="stat-title text-secondary">Shares</div>
+                <div className="stat-desc text-secondary">done by followers</div>
               </div>
               <Link href="/portfolio" className="btn btn-primary my-4">
                 See Portfolio

@@ -32,7 +32,7 @@ const IconWhatsApp = () => (
 
 export default function Contact(): JSX.Element {
   const phone = '+971 547 878 677';
-  const email = 'ajmal@boostupmedia.pro';
+  const email = 'info@boostmidea.com';
 
   return (
     <>

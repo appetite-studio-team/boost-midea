@@ -46,9 +46,15 @@ export default function About() {
               </ol>
             </div>
           </div>
+          <div className='text-center mt-8'>
+            <h3 className='text-3xl font-bold'>
+              That's we do <br/>
+              Simple and Precise
+            </h3>
+          </div>
         </div>
       </section>
-      <section className="relative bg-neutral text-white">
+      <section className="relative bg-neutral-900 text-white">
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-4 px-4 py-20 md:grid-cols-2 lg:gap-8">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -89,12 +95,13 @@ export default function About() {
               height={300}
             />
           </div>
-          <div className="relative z-10 m-auto max-w-lg space-y-4 py-8">
-            <h2>Breathing life into your ideas</h2>
-            <p>
-              We help you breathe life into your ideas. We are a team of experts who love to create
-              beautiful and impactful content. We are based in Dubai and we work with clients all
-              over the world.
+          <div className="relative z-10 m-auto max-w-lg space-y-4 py-8 drop-shadow-lg">
+            <h3>Breathing life into your ideas</h3>
+            <p className='font-light'>
+              Boostup Media is a leading social media content creation agency based in Dubai,
+              specializing in creating impactful and results-driven social media strategies. We help
+              businesses grow their online presence, engage with their audience, and drive
+              measurable results through creative content and data-driven campaigns.
             </p>
           </div>
         </div>
