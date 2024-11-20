@@ -79,6 +79,45 @@ export default function Contact(): JSX.Element {
           </div>
         </div>
       </section>
+      <section className="bg-neutral-900">
+        <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-lg text-center">
+            <h1 className="text-2xl font-bold text-white sm:text-3xl">Keep in touch!</h1>
+          </div>
+
+          <form name="contact" data-netlify="true" className="mx-auto mb-0 mt-8 max-w-xs space-y-4">
+            <label className="form-control w-full max-w-xs">
+              <div className="label">
+                <span className="label-text text-white">Your name</span>
+              </div>
+              <input
+                required
+                type="text"
+                name="name"
+                placeholder="Your name"
+                className="input input-bordered w-full max-w-xs"
+              />
+            </label>
+            <label className="form-control w-full max-w-xs">
+              <div className="label">
+                <span className="label-text text-white">Your phone number</span>
+              </div>
+              <input
+                required
+                type="tel"
+                name="phone"
+                placeholder="Your phone number"
+                className="input input-bordered w-full max-w-xs"
+              />
+            </label>
+            <div className="py-4">
+              <button type="submit" className="btn btn-primary w-full">
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
       <ContactSection />
     </>
   );
