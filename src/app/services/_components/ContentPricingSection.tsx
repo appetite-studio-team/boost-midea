@@ -3,15 +3,22 @@ import PricingCard from './PricingCard';
 export default function ContentPricingSection() {
   const plans = [
     {
-      title: 'BASIC',
+      title: 'BEGINNER',
       price: 'AED 2999',
       features: ['15 Videos', '6 Poster'],
       description:
-        'Posting content on Instagram, TikTok, Youtube, Facebook & LinkedIn. Engage with the audience through comments, messages & mentions',
+        'Posting content on Instagram, TikTok, Youtube & Facebook. Engage with the audience through comments, messages & mentions',
     },
     {
-      title: 'PREMIUM',
+      title: 'POLISHED',
       price: 'AED 4999',
+      features: ['25 Videos', '12 Posters'],
+      description:
+        'Posting content on Instagram, TikTok, Youtube & Facebook. Engage with the audience through comments, messages & mentions',
+    },
+    {
+      title: 'PREMIUM-BESPOKE',
+      price: 'FLEXIBLE',
       features: [
         'Ad Poster Design',
         'Ad Video Production',
@@ -22,13 +29,6 @@ export default function ContentPricingSection() {
         'Reporting',
       ],
       description: 'Service cost is 45% of the total budget allocated for lead generation.',
-    },
-    {
-      title: 'LEAD GENERATION',
-      price: 'FLEXIBLE',
-      features: ['25 Videos', '12 Posters'],
-      description:
-        'Posting content on Instagram, TikTok, Youtube, Facebook & LinkedIn. Engage with the audience through comments, messages & mentions',
     },
   ];
 
