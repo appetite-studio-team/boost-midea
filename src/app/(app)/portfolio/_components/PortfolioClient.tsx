@@ -1,4 +1,3 @@
-// PortfolioClient.tsx
 'use client';
 import { useState } from 'react';
 import ProjectCard from './ProjectCard';
@@ -19,8 +18,11 @@ interface PortfolioClientProps {
   initialProjects: Project[];
 }
 
+const PROJECTS_PER_PAGE = 9;
+
 export default function PortfolioClient({ initialProjects }: PortfolioClientProps) {
   const [activeCategory, setActiveCategory] = useState<Category>('all');
+  const [visibleProjects, setVisibleProjects] = useState(PROJECTS_PER_PAGE);
 
   const categories: Category[] = ['all', 'Apps', 'Posters', 'VFX Videos', 'Videos', 'Websites'];
 
@@ -28,6 +30,19 @@ export default function PortfolioClient({ initialProjects }: PortfolioClientProp
     activeCategory === 'all'
       ? initialProjects
       : initialProjects.filter((project) => project.category === activeCategory);
+
+  const displayedProjects = filteredProjects.slice(0, visibleProjects);
+  const hasMoreProjects = visibleProjects < filteredProjects.length;
+
+  const handleLoadMore = () => {
+    setVisibleProjects((prev) => prev + PROJECTS_PER_PAGE);
+  };
+
+  // Reset visible projects when category changes
+  const handleCategoryChange = (category: Category) => {
+    setActiveCategory(category);
+    setVisibleProjects(PROJECTS_PER_PAGE);
+  };
 
   return (
     <>
@@ -37,7 +52,7 @@ export default function PortfolioClient({ initialProjects }: PortfolioClientProp
           <button
             key={category}
             className={`btn ${activeCategory === category ? 'btn-primary' : 'btn-neutral'}`}
-            onClick={() => setActiveCategory(category)}
+            onClick={() => handleCategoryChange(category)}
           >
             {category === 'all' ? 'All' : category}
           </button>
@@ -46,8 +61,8 @@ export default function PortfolioClient({ initialProjects }: PortfolioClientProp
 
       {/* Projects Grid */}
       <div className="mt-16 grid min-h-[400px] grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {filteredProjects.length > 0 ? (
-          filteredProjects.map((project) => (
+        {displayedProjects.length > 0 ? (
+          displayedProjects.map((project) => (
             <Link key={project.id} href={`/portfolio/${project.collection}/${project.id}`}>
               <div className="m-auto">
                 <ProjectCard
@@ -72,6 +87,28 @@ export default function PortfolioClient({ initialProjects }: PortfolioClientProp
           </div>
         )}
       </div>
+
+      {/* Load More Button */}
+      {hasMoreProjects && (
+        <div className="mt-12 flex justify-center">
+          <button className="btn btn-ghost" onClick={handleLoadMore}>
+            Show More
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </button>
+        </div>
+      )}
     </>
   );
 }
