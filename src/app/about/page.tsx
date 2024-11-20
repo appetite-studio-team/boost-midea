@@ -48,7 +48,7 @@ export default function About() {
           </div>
           <div className="mt-8 text-center">
             <h3 className="text-3xl font-bold">
-              That's we do <br />
+              That&apos;s we do <br />
               Simple and Precise
             </h3>
           </div>
