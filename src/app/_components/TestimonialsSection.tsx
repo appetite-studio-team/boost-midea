@@ -4,7 +4,7 @@ interface Testimonial {
   id: number;
   name: string;
   username: string;
-  avatar: string;
+  avatar?: string;
   text: string;
   image?: string;
 }
@@ -50,16 +50,15 @@ const testimonials: Testimonial[] = [
     id: 6,
     name: 'Sherene James',
     username: 'Beyond View business services',
-    avatar: 'https://via.placeholder.com/50',
+    avatar: '/assets/testimonials/sherene.jpeg',
     text: 'Hello Ajmal!! I just wanted to take a moment to thank you sincerely for your patience and support during my video shoot. Your interactive nature and the way you connected with everyone made us feel more enjoyable.I truly believe that with your positive attitude and hard work, you’re destined for great success. Wishing you all the best in your journey ahead, and I’m confident that you’ll reach amazing heights!',
+    image: '/assets/testimonials/sherene.jpeg',
   },
   {
     id: 7,
     name: 'Priya',
     username: 'Beyond View business services',
-    avatar: '/assets/testimonials/priya.jpeg',
     text: "Your way of editing video has given me a positive vibe and because of that everybody has incredibly loved my videos. So I just need to say 'thank you' and all the best for the upcoming events.",
-    image: '/assets/testimonials/priya.jpeg',
   },
 ];
 
@@ -102,15 +101,17 @@ const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => {
     <div className="mb-4 break-inside-avoid rounded-xl border bg-white p-3 shadow-md">
       <div className="mb-2.5 flex items-center justify-between">
         <div className="flex items-center">
-          <div className="h-10 w-10 rounded-full bg-neutral-200">
-            <Image
-              src={testimonial.avatar}
-              alt={testimonial.name + ' avatar'}
-              className="h-10 w-10 rounded-full object-cover"
-              width={40}
-              height={40}
-            />
-          </div>
+          {testimonial.avatar && (
+            <div className="h-10 w-10 rounded-full bg-neutral-200">
+              <Image
+                src={testimonial.avatar}
+                alt={testimonial.name + ' avatar'}
+                className="h-10 w-10 rounded-full object-cover"
+                width={40}
+                height={40}
+              />
+            </div>
+          )}
           <div className="ml-2.5">
             <p className="text-sm font-medium">{testimonial.name}</p>
             <p className="text-xs text-gray-500">{testimonial.username}</p>
