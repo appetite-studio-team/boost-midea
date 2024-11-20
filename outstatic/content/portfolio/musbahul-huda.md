@@ -1,6 +1,6 @@
 ---
 title: 'Musbahul Huda'
-status: 'draft'
+status: 'published'
 author:
   name: 'AbdulSamad'
   picture: 'https://avatars.githubusercontent.com/u/47020656?v=4'
