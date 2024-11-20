@@ -27,9 +27,6 @@ export default function ServicesSection() {
           <div className="card-body">
             <h2 className="card-title">Creative content creation</h2>
             <p>Script, shoot, edit, post and go viral</p>
-            <div className="card-actions justify-end">
-              <button className="btn btn-ghost">Learn more</button>
-            </div>
           </div>
         </div>
 
@@ -42,9 +39,6 @@ export default function ServicesSection() {
           <div className="card-body">
             <h2 className="card-title">Poster and graphic design</h2>
             <p>Awesome creative posters and daily posters for your business</p>
-            <div className="card-actions justify-end">
-              <button className="btn btn-ghost">Learn more</button>
-            </div>
           </div>
         </div>
 
@@ -57,9 +51,6 @@ export default function ServicesSection() {
           <div className="card-body">
             <h2 className="card-title">Website and app development</h2>
             <p>Let&apos;s build up your digital home with the latest tech</p>
-            <div className="card-actions justify-end">
-              <button className="btn btn-ghost">Learn more</button>
-            </div>
           </div>
         </div>
 
@@ -72,9 +63,6 @@ export default function ServicesSection() {
           <div className="card-body">
             <h2 className="card-title">Branding</h2>
             <p>Personal/Company branding. We bring your story to life </p>
-            <div className="card-actions justify-end">
-              <button className="btn btn-ghost">Learn more</button>
-            </div>
           </div>
         </div>
       </div>
