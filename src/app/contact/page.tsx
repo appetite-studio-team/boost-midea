@@ -85,7 +85,7 @@ export default function Contact(): JSX.Element {
             <h1 className="text-2xl font-bold text-white sm:text-3xl">Keep in touch!</h1>
           </div>
 
-          <form name="contact" data-netlify="true" className="mx-auto mb-0 mt-8 max-w-xs space-y-4">
+          <form name="lead-form" data-netlify="true" method="POST" className="mx-auto mb-0 mt-8 max-w-xs space-y-4">
             <label className="form-control w-full max-w-xs">
               <div className="label">
                 <span className="label-text text-white">Your name</span>
