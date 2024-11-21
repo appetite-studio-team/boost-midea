@@ -49,7 +49,8 @@ async function getData(params: ProjectParams) {
   }
 }
 
-export default async function ProjectPage({ params }: { params: ProjectParams }) {
+export default async function ProjectPage(props: { params: Promise<ProjectParams> }) {
+  const params = await props.params;
   const project = await getData(params);
 
   if (!project) {
@@ -64,7 +65,7 @@ export default async function ProjectPage({ params }: { params: ProjectParams })
           <h1 className="py-8 text-center">{project.title}</h1>
 
           {/* Project Image */}
-          <div className="relative my-4 aspect-square w-full overflow-hidden rounded-lg">
+          {project.coverImage && project.coverImage !== "" && <div className="relative my-4 aspect-square w-full overflow-hidden rounded-lg">
             <Image
               src={project.coverImage}
               alt={project.title}
@@ -72,7 +73,7 @@ export default async function ProjectPage({ params }: { params: ProjectParams })
               className="object-cover shadow-lg"
               priority
             />
-          </div>
+          </div>}
 
           {/* Project Content */}
           <article

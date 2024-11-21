@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import ContactSection from '../_components/ContactSection';
 import ContactCard from './_components/ContactCard';
-import { useState, FormEvent } from 'react';
+import { useState, FormEvent, type JSX } from 'react';
 
 // Define types for form status
 type FormStatus = 'pending' | 'ok' | 'error' | null;
