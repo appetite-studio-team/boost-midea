@@ -65,15 +65,17 @@ export default async function ProjectPage(props: { params: Promise<ProjectParams
           <h1 className="py-8 text-center">{project.title}</h1>
 
           {/* Project Image */}
-          {project.coverImage && project.coverImage !== "" && <div className="relative my-4 aspect-square w-full overflow-hidden rounded-lg">
-            <Image
-              src={project.coverImage}
-              alt={project.title}
-              fill
-              className="object-cover shadow-lg"
-              priority
-            />
-          </div>}
+          {project.coverImage && project.coverImage !== '' && (
+            <div className="relative my-4 aspect-square w-full overflow-hidden rounded-lg">
+              <Image
+                src={project.coverImage}
+                alt={project.title}
+                fill
+                className="object-cover shadow-lg"
+                priority
+              />
+            </div>
+          )}
 
           {/* Project Content */}
           <article
