@@ -1,0 +1,42 @@
+{
+  "commit": "e0eeef9891296663cf77117bf7239499edd35c59",
+  "generated": "Thu, 21 Nov 2024 13:56:34 GMT",
+  "metadata": [
+    {
+      "__outstatic": {
+        "commit": "33337e0e8f3f0329ffd7e96c21b4a70aac8a0255",
+        "hash": "1217241268",
+        "path": "outstatic/content/websites/musbahul-huda.md"
+      },
+      "author": {
+        "name": "AbdulSamad",
+        "picture": "https://avatars.githubusercontent.com/u/47020656?v=4"
+      },
+      "collection": "websites",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-11-20T21:23:17.645Z",
+      "slug": "musbahul-huda",
+      "status": "published",
+      "title": "Musbahul Huda"
+    },
+    {
+      "__outstatic": {
+        "commit": "3687974e8e446fba80aaeac4e687f5a3427f8c39",
+        "hash": "2125662198",
+        "path": "outstatic/content/posters/musbahul-huda.md"
+      },
+      "author": {
+        "name": "AbdulSamad",
+        "picture": "https://avatars.githubusercontent.com/u/47020656?v=4"
+      },
+      "collection": "posters",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-11-20T21:22:15.367Z",
+      "slug": "musbahul-huda",
+      "status": "published",
+      "title": "Musbahul Huda"
+    }
+  ]
+}
