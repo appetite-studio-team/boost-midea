@@ -1,6 +1,6 @@
 {
-  "commit": "e0eeef9891296663cf77117bf7239499edd35c59",
-  "generated": "Thu, 21 Nov 2024 13:56:34 GMT",
+  "commit": "faeffcf62d6762ec1598d23f4ff24a35f3a90f5a",
+  "generated": "2024-11-21T14:16:46.329Z",
   "metadata": [
     {
       "__outstatic": {
@@ -37,6 +37,24 @@
       "slug": "musbahul-huda",
       "status": "published",
       "title": "Musbahul Huda"
+    },
+    {
+      "__outstatic": {
+        "commit": "faeffcf62d6762ec1598d23f4ff24a35f3a90f5a",
+        "hash": "785044032",
+        "path": "outstatic/content/posters/social-media.md"
+      },
+      "author": {
+        "name": "",
+        "picture": "https://avatars.githubusercontent.com/u/189245917?v=4"
+      },
+      "collection": "posters",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-11-21T14:48:29.626Z",
+      "slug": "social-media",
+      "status": "draft",
+      "title": "Social Media"
     }
   ]
 }
