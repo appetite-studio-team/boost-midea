@@ -21,10 +21,10 @@ interface PortfolioClientProps {
 const PROJECTS_PER_PAGE = 9;
 
 export default function PortfolioClient({ initialProjects }: PortfolioClientProps) {
-  const [activeCategory, setActiveCategory] = useState<Category>('all');
+  const [activeCategory, setActiveCategory] = useState<Category>('Videos');
   const [visibleProjects, setVisibleProjects] = useState(PROJECTS_PER_PAGE);
 
-  const categories: Category[] = ['all', 'Apps', 'Posters', 'VFX Videos', 'Videos', 'Websites'];
+  const categories: Category[] = ['Videos', 'Posters', 'VFX Videos', 'Websites', 'Apps'];
 
   const filteredProjects =
     activeCategory === 'all'

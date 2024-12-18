@@ -19,14 +19,14 @@ export default function ServicesSection() {
             <div className="relative mt-4 h-64 w-full">
               <Image
                 src="/assets/creative-content-creation.svg"
-                alt="Creative content creation"
+                alt="Organic Content Creation"
                 fill
               />
             </div>
           </figure>
           <div className="card-body">
-            <h2 className="card-title">Creative content creation</h2>
-            <p>Script, shoot, edit, post and go viral</p>
+            <h2 className="card-title">Organic Content Creation</h2>
+            <p>With careful preparation and execution, we bring dreams into reality.</p>
           </div>
         </div>
 
@@ -38,7 +38,7 @@ export default function ServicesSection() {
           </figure>
           <div className="card-body">
             <h2 className="card-title">Poster and graphic design</h2>
-            <p>Awesome creative posters and daily posters for your business</p>
+            <p>Custom posters crafted to tell your unique story.</p>
           </div>
         </div>
 
@@ -50,10 +50,11 @@ export default function ServicesSection() {
           </figure>
           <div className="card-body">
             <h2 className="card-title">Website and app development</h2>
-            <p>Let&apos;s build up your digital home with the latest tech</p>
+            <p>With careful preparation and execution, we bring dreams into reality.</p>
           </div>
         </div>
 
+        {/*
         <div className="card w-96 rounded border bg-base-100">
           <figure>
             <div className="relative mt-4 h-64 w-full">
@@ -65,6 +66,7 @@ export default function ServicesSection() {
             <p>Personal/Company branding. We bring your story to life </p>
           </div>
         </div>
+        */}
       </div>
     </section>
   );

@@ -1,8 +1,8 @@
 import TestimonialSection from '../_components/TestimonialsSection';
 import ContactSection from '../_components/ContactSection';
 import Service from './_components/Service';
-import ContentPricingSection from './_components/ContentPricingSection';
-import PersonalBrandingPricingSection from './_components/PersonalBrandingPricingSection';
+// import ContentPricingSection from './_components/ContentPricingSection';
+// import PersonalBrandingPricingSection from './_components/PersonalBrandingPricingSection';
 
 export default function Services() {
   return (
@@ -14,11 +14,13 @@ export default function Services() {
           </h1>
           <div className="space-y-8 pt-8">
             <Service
-              title="Creative content creation"
-              linkText="Start creating content"
+              title="Organic content creation"
+              linkText="Let's Begin"
               image="/assets/creative-content-creation.svg"
             >
-              <p className="font-medium">Script, shoot, edit, post and go viral</p>
+              <p className="font-medium">
+                With careful preparation and execution, we bring dreams into reality.
+              </p>
               <p className="mt-2">
                 scripting the ideas
                 <span className="px-2 text-gray-400">|</span>
@@ -39,7 +41,7 @@ export default function Services() {
               image="/assets/graphic-design.svg"
               align="end"
             >
-              <p className="font-medium">Stand out with stunning visuals</p>
+              <p className="font-medium">Custom posters crafted to tell your unique story.</p>
               <p className="mt-2">
                 daily posters
                 <span className="px-2 text-gray-400">|</span>
@@ -59,9 +61,7 @@ export default function Services() {
               linkText="Build your digital presence"
               image="/assets/website-and-app-development.svg"
             >
-              <p className="font-medium">
-                Let&apos;s build up your digital home with the latest tech
-              </p>
+              <p className="font-medium">Build your digital presence to BUILD YOUR DREAM</p>
               <p className="mt-2">
                 custom websites
                 <span className="px-2 text-gray-400">|</span>
@@ -76,6 +76,7 @@ export default function Services() {
                 maintenance
               </p>
             </Service>
+            {/*
             <Service
               title="Branding"
               linkText="Elevate your brand"
@@ -97,11 +98,14 @@ export default function Services() {
                 positioning
               </p>
             </Service>
+            */}
           </div>
         </div>
       </section>
+      {/*
       <ContentPricingSection />
       <PersonalBrandingPricingSection />
+      */}
       <TestimonialSection />
       <ContactSection />
     </>
