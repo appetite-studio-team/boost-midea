@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 export const ChatBubble = ({
-  name = 'Ajmal',
+  name = 'Boost Midea',
   time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
   align = 'start',
   children = '',
@@ -19,7 +19,7 @@ export const ChatBubble = ({
             alt="Chat avatar"
             src={
               align === 'start'
-                ? '/assets/ajmal.jpg'
+                ? '/assets/boost-media-avatar.png'
                 : 'https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp'
             }
             width={40}
@@ -29,7 +29,7 @@ export const ChatBubble = ({
         </div>
       </div>
       <div className="chat-header">
-        <span className={`mx-2 ${name === 'Ajmal' && 'text-info'}`}>{name}</span>
+        <span className={`mx-2 ${name === 'Boost Midea' && 'text-info'}`}>{name}</span>
         <time className="text-xs opacity-50">{time}</time>
       </div>
       <div className="chat-bubble">{children}</div>
