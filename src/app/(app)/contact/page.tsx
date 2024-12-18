@@ -56,7 +56,7 @@ const IconWhatsApp: React.FC<IconProps> = ({ className }) => (
 
 export default function Contact(): JSX.Element {
   const phone = '+971 566 224 413';
-  const whatsapp = '+971 547 878 677';
+  const whatsapp = '+971 569 888 786';
   const email = 'info@boostmidea.com';
 
   const [formStatus, setFormStatus] = useState<FormStatus>(null);

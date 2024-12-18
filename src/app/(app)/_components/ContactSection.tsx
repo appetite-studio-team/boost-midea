@@ -14,7 +14,7 @@ const ContactSection: React.FC = () => {
         <div className="indicator">
           <span className="badge indicator-item badge-success scale-50"></span>
           <span className="badge indicator-item badge-success opacity-50"></span>
-          <a href="tel:+971 54 787 8677" className="btn btn-primary btn-wide z-10">
+          <a href="tel:+971569888786" className="btn btn-primary btn-wide z-10">
             Let&apos;s Talk
           </a>
         </div>
