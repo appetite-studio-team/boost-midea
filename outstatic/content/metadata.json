@@ -1,6 +1,6 @@
 {
   "commit": "f2386fbfaebf9686f71cff34b86fe678e00d2250",
-  "generated": "2024-12-19T14:45:47.048Z",
+  "generated": "2024-12-19T14:46:03.248Z",
   "metadata": [
     {
       "__outstatic": {
@@ -59,20 +59,20 @@
     {
       "__outstatic": {
         "commit": "f2386fbfaebf9686f71cff34b86fe678e00d2250",
-        "hash": "3601749040",
-        "path": "outstatic/content/videos/test-video.md"
+        "hash": "3084911513",
+        "path": "outstatic/content/videos/bollywood-themed-restaurant.md"
       },
       "author": {
-        "name": "AbdulSamad",
-        "picture": "https://avatars.githubusercontent.com/u/47020656?v=4"
+        "name": "",
+        "picture": ""
       },
       "collection": "videos",
       "coverImage": "",
       "description": "",
-      "publishedAt": "2024-12-19T15:16:50.221Z",
-      "slug": "test-video",
+      "publishedAt": "2024-12-19T15:17:00.781Z",
+      "slug": "bollywood-themed-restaurant",
       "status": "draft",
-      "title": "test video"
+      "title": "Bollywood Themed Restaurant "
     }
   ]
 }
