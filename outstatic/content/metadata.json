@@ -1,6 +1,6 @@
 {
-  "commit": "faeffcf62d6762ec1598d23f4ff24a35f3a90f5a",
-  "generated": "2024-11-21T14:16:46.329Z",
+  "commit": "f2386fbfaebf9686f71cff34b86fe678e00d2250",
+  "generated": "2024-12-19T14:45:47.048Z",
   "metadata": [
     {
       "__outstatic": {
@@ -55,6 +55,24 @@
       "slug": "social-media",
       "status": "draft",
       "title": "Social Media"
+    },
+    {
+      "__outstatic": {
+        "commit": "f2386fbfaebf9686f71cff34b86fe678e00d2250",
+        "hash": "3601749040",
+        "path": "outstatic/content/videos/test-video.md"
+      },
+      "author": {
+        "name": "AbdulSamad",
+        "picture": "https://avatars.githubusercontent.com/u/47020656?v=4"
+      },
+      "collection": "videos",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-12-19T15:16:50.221Z",
+      "slug": "test-video",
+      "status": "draft",
+      "title": "test video"
     }
   ]
 }
