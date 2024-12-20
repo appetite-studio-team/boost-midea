@@ -91,7 +91,7 @@ export const Header = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a href="tel:+971 54 787 8677" className="btn btn-neutral">
+        <a href="tel:+971569888786" className="btn btn-neutral">
           <svg
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
