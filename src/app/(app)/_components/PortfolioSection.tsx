@@ -213,7 +213,7 @@ const PortfolioSection: React.FC = () => {
                 <div className="stat-figure text-secondary">
                   <div className="avatar online">
                     <div className="w-16 rounded-full">
-                      <Image src="/assets/ajmal.jpg" alt="Stat avatar" width={64} height={64} />
+                      <Image src="/assets/boost-midea-avatar.png" alt="Boost Midea avatar" width={64} height={64} />
                     </div>
                   </div>
                 </div>

@@ -19,7 +19,7 @@ export const ChatBubble = ({
             alt="Chat avatar"
             src={
               align === 'start'
-                ? '/assets/boost-media-avatar.png'
+                ? '/assets/boost-midea-avatar.png'
                 : 'https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp'
             }
             width={40}
