@@ -98,7 +98,7 @@ export default function About() {
           <div className="relative z-10 m-auto max-w-lg space-y-4 py-8 drop-shadow-lg">
             <h3>Breathing life into your ideas</h3>
             <p className="font-light">
-              Boostup Media is a leading social media content creation agency based in Dubai,
+              Boost Midea is a leading social media content creation agency based in Dubai,
               specializing in creating impactful and results-driven social media strategies. We help
               businesses grow their online presence, engage with their audience, and drive
               measurable results through creative content and data-driven campaigns.
