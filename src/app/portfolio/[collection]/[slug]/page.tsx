@@ -1,10 +1,8 @@
 // app/portfolio/[collection]/[slug]/page.tsx
-import { getDocumentBySlug } from 'outstatic/server';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import markdownToHtml from '@/lib/markdownToHtml';
-import ContactSection from '@/app/(app)/_components/ContactSection';
+import ContactSection from '@/app/_components/ContactSection';
 
 interface ProjectParams {
   collection: string;
@@ -22,31 +20,7 @@ interface Project {
 }
 
 async function getData(params: ProjectParams) {
-  try {
-    const project = getDocumentBySlug(params.collection, params.slug, [
-      'title',
-      'publishedAt',
-      'slug',
-      'content',
-      'coverImage',
-      'status',
-    ]) as Project;
-
-    // If project doesn't exist or isn't published, return 404
-    if (!project || project.status !== 'published') {
-      return null;
-    }
-
-    const content = await markdownToHtml(project.content || '');
-
-    return {
-      ...project,
-      content,
-    };
-  } catch (error) {
-    console.log(error);
-    return null;
-  }
+  return null
 }
 
 export default async function ProjectPage(props: { params: Promise<ProjectParams> }) {

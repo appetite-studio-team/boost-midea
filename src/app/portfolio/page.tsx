@@ -1,5 +1,4 @@
 // page.tsx
-import { getDocuments } from 'outstatic/server';
 import PortfolioClient from './_components/PortfolioClient';
 import ContactSection from '../_components/ContactSection';
 
