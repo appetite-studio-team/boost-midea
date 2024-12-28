@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
+import { Header } from '@/app/(frontend)/components/Header';
+import { Footer } from '@/app/(frontend)/components/Footer';
 import { Syne, Inter } from 'next/font/google';
 import 'animate.css';
 

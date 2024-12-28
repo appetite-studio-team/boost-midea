@@ -10,8 +10,14 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@payloadcms/db-mongodb": "^3.11.0",
+    "@payloadcms/next": "^3.11.0",
+    "@payloadcms/payload-cloud": "^3.11.0",
+    "@payloadcms/richtext-lexical": "^3.11.0",
     "animate.css": "^4.1.1",
+    "graphql": "^16.10.0",
     "next": "15.1.3",
+    "payload": "^3.11.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "remark": "^15.0.1",

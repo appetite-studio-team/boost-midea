@@ -2,7 +2,7 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import ContactSection from '@/app/_components/ContactSection';
+import ContactSection from '@/app/(frontend)/_components/ContactSection';
 
 interface ProjectParams {
   collection: string;

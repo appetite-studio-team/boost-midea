@@ -1,4 +1,4 @@
-import { ChatBubble } from '@/components/ChatBubble';
+import { ChatBubble } from '@/app/(frontend)/components/ChatBubble';
 import Image from 'next/image';
 
 const ContactSection: React.FC = () => {
