@@ -2,60 +2,14 @@
 import PortfolioClient from './_components/PortfolioClient';
 import ContactSection from '../_components/ContactSection';
 
-interface Project {
-  id: string;
-  image: string | undefined;
-  title: string;
-  description: string | undefined;
-  category: string;
-  collection: string;
-}
-
-// Function to capitalize first letter of each word
-const formatCategory = (category: string) => {
-  return category
-    .split('-')
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(' ');
-};
-
-async function getData(): Promise<Project[]> {
-  // Fetch from all collections
-  const collections = ['apps', 'posters', 'vfx-videos', 'videos', 'websites'];
-  const allProjects = await Promise.all(
-    collections.map(async (collection) => {
-      const docs = await getDocuments(collection, [
-        'title',
-        'description',
-        'slug',
-        'coverImage',
-        'status',
-      ]);
-      return docs
-        .filter((doc) => doc.status === 'published')
-        .map((doc) => ({
-          id: doc.slug,
-          image: doc.coverImage,
-          title: doc.title,
-          description: doc.description,
-          category: formatCategory(collection),
-          collection: collection,
-        }));
-    }),
-  );
-  return allProjects.flat();
-}
-
 export default async function Portfolio() {
-  const projects = await getData();
-
   return (
     <>
       <section className="noise-bg-red">
         <div className="m-auto max-w-7xl px-4 py-16 pt-32">
           <h1 className="animate__animated animate__fadeInUp py-8 text-center">Our Portfolio</h1>
 
-          <PortfolioClient initialProjects={projects} />
+          <PortfolioClient initialProjects={[]} />
 
           {/* Portfolio Stats */}
           <div className="mt-20 grid grid-cols-2 gap-8 md:grid-cols-4">
