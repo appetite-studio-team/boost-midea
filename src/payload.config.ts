@@ -29,7 +29,7 @@ export default buildConfig({
     outputFile: path.resolve(dirname, 'payload-types.ts'),
   },
   db: mongooseAdapter({
-    url: process.env.DATABASE_URI || '',
+    url: process.env.NEXT_PUBLIC_DATABASE_URI || '',
   }),
   sharp,
   plugins: [
