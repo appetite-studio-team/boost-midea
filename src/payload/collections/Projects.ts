@@ -1,4 +1,4 @@
-import type { CollectionConfig } from 'payload'
+import type { CollectionConfig } from 'payload';
 
 import {
   FixedToolbarFeature,
@@ -6,7 +6,7 @@ import {
   HorizontalRuleFeature,
   InlineToolbarFeature,
   lexicalEditor,
-} from '@payloadcms/richtext-lexical'
+} from '@payloadcms/richtext-lexical';
 
 export const Projects: CollectionConfig = {
   slug: 'projects',
@@ -39,7 +39,7 @@ export const Projects: CollectionConfig = {
             FixedToolbarFeature(),
             InlineToolbarFeature(),
             HorizontalRuleFeature(),
-          ]
+          ];
         },
       }),
       required: true,
@@ -66,12 +66,12 @@ export const Projects: CollectionConfig = {
         beforeChange: [
           ({ siblingData, value }) => {
             if (siblingData._status === 'published' && !value) {
-              return new Date()
+              return new Date();
             }
-            return value
+            return value;
           },
         ],
       },
     },
   ],
-}
+};
