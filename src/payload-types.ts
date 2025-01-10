@@ -25,7 +25,9 @@ export interface Config {
     categories: CategoriesSelect<false> | CategoriesSelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
     users: UsersSelect<false> | UsersSelect<true>;
-    'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
+    'payload-locked-documents':
+      | PayloadLockedDocumentsSelect<false>
+      | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
     'payload-migrations': PayloadMigrationsSelect<false> | PayloadMigrationsSelect<true>;
   };
@@ -70,6 +72,7 @@ export interface Project {
   title: string;
   heroImage?: (string | null) | Media;
   videoLink?: string | null;
+  externalLink?: string | null;
   content: {
     root: {
       type: string;
@@ -97,6 +100,7 @@ export interface Project {
 export interface Media {
   id: string;
   alt: string;
+  _key?: string | null;
   updatedAt: string;
   createdAt: string;
   url?: string | null;
@@ -209,6 +213,7 @@ export interface ProjectsSelect<T extends boolean = true> {
   title?: T;
   heroImage?: T;
   videoLink?: T;
+  externalLink?: T;
   content?: T;
   categories?: T;
   publishedAt?: T;
@@ -230,6 +235,7 @@ export interface CategoriesSelect<T extends boolean = true> {
  */
 export interface MediaSelect<T extends boolean = true> {
   alt?: T;
+  _key?: T;
   updatedAt?: T;
   createdAt?: T;
   url?: T;
@@ -296,7 +302,6 @@ export interface PayloadMigrationsSelect<T extends boolean = true> {
 export interface Auth {
   [k: string]: unknown;
 }
-
 
 declare module 'payload' {
   export interface GeneratedTypes extends Config {}

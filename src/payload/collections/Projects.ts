@@ -29,6 +29,10 @@ export const Projects: CollectionConfig = {
       type: 'text',
     },
     {
+      name: 'externalLink',
+      type: 'text',
+    },
+    {
       name: 'content',
       type: 'richText',
       editor: lexicalEditor({
