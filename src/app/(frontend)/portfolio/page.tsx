@@ -4,7 +4,6 @@ import PortfolioClient from './_components/PortfolioClient';
 import ContactSection from '../_components/ContactSection';
 
 async function fetchProjects() {
-  'use server';
   const payload = await getPayload({ config });
 
   const projectsResult = await payload.find({
